@@ -18,6 +18,11 @@
     "react-dom": "^15.1.0"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/jestPreprocessor.js"
+    "scriptPreprocessor": "<rootDir>/jestPreprocessor.js",
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
   }
 }
