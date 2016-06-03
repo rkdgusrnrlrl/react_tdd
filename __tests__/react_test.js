@@ -5,6 +5,15 @@ import TestUtils from 'react-addons-test-utils';
 
 //@todo 개인 정보(이름, 나이, 성별)를 form 으로 서버에 보냄 
 
+var InsertPersonInfoForm = React.createClass({
+  render: function() {
+    return (
+      <form></form>
+    );
+  }
+});
+
+
 describe('개인 정보(이름, 나이, 성별)를 form 으로 서버에 보냄 ', () => {
   it('Form 컴포넌트 렌더링 input 3개 포함', () => {
     const form = TestUtils.renderIntoDocument(
