@@ -29,12 +29,16 @@ describe("A suite", function() {
 describe("A suite for HomeKeeperTable", function() {
   var HomeKeeperTable = React.createClass({
     render : function () {
-      return <table/>
+      return <table className="table"/>
     }
   })
 
   it("HomeKeeperTable 은 table 엘리먼트임", function() {
     expect(shallow(<HomeKeeperTable />).is('table')).to.equal(true);
+  });
+
+  it("className(class)는 테이블 이여야함 (부트스트랩 클래스)", function() {
+    expect(shallow(<HomeKeeperTable />).is('.table')).to.equal(true);
   });
   
 });
